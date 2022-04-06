@@ -17,6 +17,8 @@ int main ()
         x = (i+0.5)*step;
         sum = sum + 4.0/(1.0+x*x);
     }
+
+
     pi = step * sum;
 
     omp_set_num_threads(NUM_THREADS);
